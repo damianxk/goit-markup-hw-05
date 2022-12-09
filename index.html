@@ -82,9 +82,21 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="index-main-section-button">Zamów usługe</button>
+          <button type="button" class="index-main-section-button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
+      <!-- Modal Form  -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close" data-modal-close>
+            <svg class="close-svg" width="11" height="11">
+              <use href="./images/close-button.svg#close-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Sekcja Nasze atuty -->
       <section class="advantages-section section">
         <div class="container">
@@ -148,30 +160,33 @@
             <ul class="what-we-do-list">
               <li class="what-we-do-list-item">
                 <img
+                  class="what-we-do-image"
                   src="images/what-we-do-keyboard.jpg"
                   alt="zdjęcie klawiatury przy komputerze"
                   width="370"
                   height="294"
                 />
-                <div class="what-we-do-overlay"><h4 class="what-we-do-overlay-title">Aplikacje komputerowe</h4></div>
+                <p class="what-we-do-overlay">Aplikacje komputerowe</p>
               </li>
               <li class="what-we-do-list-item">
                 <img
+                  class="what-we-do-image"
                   src="images/what-we-do-phone.jpg"
                   alt="zdjęcie telefonu w ręce przy laptopie"
                   width="370"
                   height="294"
                 />
-                <div class="what-we-do-overlay"><h4 class="what-we-do-overlay-title">Aplikacje mobilne</h4></div>
+                <p class="what-we-do-overlay">Aplikacje mobilne</p>
               </li>
               <li class="what-we-do-list-item">
                 <img
+                  class="what-we-do-image"
                   src="images/what-we-do-graphic.jpg"
                   alt="zdjęcie tableta z grafiką na ekranie"
                   width="370"
                   height="294"
                 />
-                <div class="what-we-do-overlay"><h4 class="what-we-do-overlay-title">Rozwiązania graficzne</h4></div>
+                <p class="what-we-do-overlay">Rozwiązania graficzne</p>
               </li>
             </ul>
           </div>
@@ -463,5 +478,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
