@@ -214,7 +214,7 @@ ul {
     url('../images/main-section.jpg');
   text-align: center;
   margin: 0 auto;
-  max-width: 1600px;
+  width: 1600px;
   padding: 200px 0;
   display: flex;
   flex-direction: column;
